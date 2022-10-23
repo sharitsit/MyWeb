@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style type="text/css">
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+        #all{
+            
+        }
+        /* 标题 */
+        #title {
+            background-image:url(image/墙3.png);
+            background-repeat:no-repeat;
+
+            width:1920px;
+            height:200px;
+            display:flex;
+            /* justify-content:; */
+        }
+        
+
+        /*插入的鸟插画*/
+        #main #main_side .bird{
+            /* border:1px solid red; */
+            width: 600px;
+            height: 300px;
+            position:absolute;
+            top:-102px;
+            left:-500px; 
+            opacity:1; 
+            overflow:hidden;
+             
+        } 
+        #main #main_middle .bird2{
+            width:250px;
+            height:400px;
+            position:absolute;
+            opacity: 0.8;
+            top:150px;
+            left:0px;
+
+
+
+        }
+
+        /* 主体部分 */
+        #main{
+            display:flex;
+            width:1920px;
+            height:549px;
+            /* border:1px solid blue; */
+            background-image: url(image/宫墙1.png);
+            /* opacity: 0.5; */
+            box-shadow: 0px 10px 5px rgb(102, 98, 98);
+            margin-bottom:10px;
+        }
+        #main_side{
+            width:490px;
+            height:549px;
+            position:relative;
+            /* border:1px solid red; */
+        }
+        #main_middle{
+            width:917px;
+            height:549px;
+            /* border:1px solid red; */
+            background-image:url(image/中间背景2.png);
+            opacity:0.7;
+            position:relative;
+            
+        }
+
+
+        /* 金榜题名 */
+        #main_middle .title_word{
+            /* border:1px solid rgb(255, 16, 4); */
+            height:125px;
+            line-height:125px;
+            width:280px;
+            text-align:center;
+            
+            font-family:楷体;
+            font-size:50px;
+            font-weight:bold;
+            position:absolute;
+            left:310px;
+            text-shadow:3px 3px 2px #ffff0c;
+            color:red;
+            font-style:italic;
+            background-image: url(image/金榜题名背景框2.png);
+            /* box-shadow:5px -5px 2px rgba(97, 97, 97, 1); */
+        }
+
+
+        
+
+
+        /* 四个关于 */
+        #main #main_middle .list{
+            /* border:1px solid red; */
+            margin-top:170px;
+            width:1000px;
+            height:300px;
+        }
+        #main #main_middle .list ul{
+            margin-left:200px;
+            margin-right:200px;
+            margin-top:0px;
+            
+            
+            
+
+        }
+        #main #main_middle .list ul li{
+            writing-mode: tb-rl;
+            float:left;
+            /* border:1px solid red; */
+            margin-right:100px;
+            margin-left:-20px;
+            margin-top:0px;
+            list-style-type:none;
+            
+            
+            /* justify-content: space-around; */
+            
+        }
+        #main #main_middle .list ul li{
+            font-size:35px;
+            width:70px;
+            height:284px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+            text-align: center;
+            line-height: 70px;
+            font-family: 楷体;
+            text-shadow:3px 3px rgb(133, 121, 121);
+            font-weight:bold;
+            
+            
+            
+        }
+        /* #main #main_middle .list ul li:hover{
+            width:75px;
+            height:290px;
+            margin-top:2px;
+            margin-left:3px;
+            
+        }  */
+        /*第一个书签 */
+        #main #main_middle .list ul .shuqian1 li{
+            background-image:url(image/书签1（红色）.png); 
+            
+            
+
+         } 
+        #main #main_middle .list ul .shuqian1{
+            position:relative;
+        }
+        #main #main_middle .list ul .shuqian1 a:link{
+            color:#319ff9;
+        }
+        #main #main_middle .list ul .shuqian1 a:visited{
+            color:#319ff9;
+        }
+        #main #main_middle .list ul .shuqian1 a:hover{
+            color:rgb(0, 0, 0);
+        }
+        #main #main_middle .list ul .shuqian1 a:active{
+            color:rgb(238, 75, 75);
+        }
+
+
+
+
+        /* 第二个书签 */
+        #main #main_middle .list ul .shuqian2 li{
+            background-image:url(image/书签2（蓝色）.png);
+
+
+        }
+        #main #main_middle .list ul .shuqian2 a:link{
+            color:rgb(238, 75, 75);
+        }
+        #main #main_middle .list ul .shuqian2 a:visited{
+            color:rgb(238, 75, 75);
+        }
+        #main #main_middle .list ul .shuqian2 a:hover{
+            color:rgb(0, 0, 0);
+        }
+        #main #main_middle .list ul .shuqian2 a:active{
+            color:#319ff9;
+        }
+
+
+        /* 第三个书签 */
+        #main #main_middle .list ul .shuqian3 li{
+            background-image:url(image/书签3（青色）.png)
+
+        }
+        #main #main_middle .list ul .shuqian3 a:link{
+            color:rgb(247, 180, 37);
+        }
+        #main #main_middle .list ul .shuqian3 a:visited{
+            color:rgb(247, 180, 37);
+        }
+        #main #main_middle .list ul .shuqian3 a:hover{
+            color:rgb(0, 0, 0);
+        }
+        #main #main_middle .list ul .shuqian3 a:active{
+            color:rgb(71, 227, 71);
+        }
+
+
+
+        /* 第四个书签 */
+        #main #main_middle .list ul .shuqian4 li{
+            background-image:url(image/书签4（黄色）.png)
+
+        }
+        #main #main_middle .list ul .shuqian4 a:link{
+            color:rgb(71, 227, 71);
+        }
+        #main #main_middle .list ul .shuqian4 a:visited{
+            color:rgb(71, 227, 71);
+        }
+        #main #main_middle .list ul .shuqian4 a:hover{
+            color:rgb(0, 0, 0);
+        }
+        #main #main_middle .list ul .shuqian4 a:active{
+            color:yellow;
+        }
+
+        /* 书签动画 */
+        @keyframes shuqian{
+            from {
+                width:70px;
+                height:284px;}
+            to {
+                width:80px;
+                height:290;
+            }
+        }
+        .shuqian1,.shuqian2,.shuqian3,.shuqian4{
+            transition:  ease 0.5s;
+            
+        }
+        .shuqian1:hover{
+            transform: scale(1.05);
+        }
+        .shuqian2:hover{
+            transform: scale(1.05);
+        }
+        .shuqian3:hover{
+            transform: scale(1.05);
+        }
+        .shuqian4:hover{
+            transform: scale(1.05);
+        }
+
+
+
+
+        #main #main_middle .list ul li a{
+            text-decoration: none;
+            
+            
+
+        }
+        /* 结尾部分 */
+        #end{
+            
+        }
+        #end .flower{
+            /* border:1px solid red; */
+            width:1920px;
+            height:208px;
+            background-image:url(image/结尾1.png);
+            background-repeat: no-repeat;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        #end .flower .end_back{
+            /* border:1px solid red; */
+            width:800px;
+            height:100px;
+            line-height:100px;
+            align-self: center;
+            background-image:url(image/文本边框.png);
+            
+            opacity: 0.7;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        }
+        #end .flower .end_back .end_word{
+            font-family:隶书;
+            font-size:30px;
+            text-align:center;
+        }
+        #end .flower .end_back .end_word{
+            transition: transform ease 0.5s;
+        }
+        #end .flower .end_back .end_word:hover{
+            transform: scale(1.1);
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="title">
+            
+                
+
+            
+            
+
+
+
+
+
+        </div>
+
+
+        <div id="main">
+            <div id="main_side">
+                
+
+            </div>
+            <div id="main_middle">
+                <!-- <img src="image/鸟2.png" class="bird2"></img> -->
+                <div class="title_word">
+                    博客榜单
+                </div>
+                <div class="list">
+                    <ul>
+                        <div class="shuqian1">
+                            <li>
+                            
+                            
+                            <a href="关于自己.html">关于自己</a>
+                            
+                            </li>
+                        </div>
+                        
+
+                        <div class="shuqian2">
+                            <li>
+                            
+                            <a href="关于兴趣.html">关于兴趣</a>
+                            
+                            </li>
+                        </div>
+
+                        <div class="shuqian3">
+                            <li>
+                            <a href="关于留言.html">关于留言</a>
+                            </li>
+                        </div>
+
+                        <div class="shuqian4">
+                            <li>
+                            <a href="旧版网页.html">旧版网页</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="main_side">
+                <img src="image/鸟.png" class="bird"></img>
+                
+
+            </div>
+        </div>
+        <div id="end">
+            <div class="flower">
+                <div class="end_back">
+                    <div class="end_word">
+                    学而不思则罔,思而不学则殆！&nbsp;&nbsp;——孔子
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+        
+        
+        
+        
+
+        
+
+
+
+    </div>
+    
+</body>
+</html>
